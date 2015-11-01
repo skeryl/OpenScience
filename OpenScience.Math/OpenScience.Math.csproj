@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E7EB92C-14DC-4E5C-9CAE-7D2F846A5FBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenScience.Math</RootNamespace>
+    <AssemblyName>OpenScience.Math</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Coordinates\Coordinate3D.cs" />
+    <Compile Include="Coordinates\PhysicalCoordinate.cs" />
+    <Compile Include="Extensions\UnitExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Units\BaseUnit.cs" />
+    <Compile Include="Units\CurrentMeasures\Ampere.cs" />
+    <Compile Include="Units\DerivedUnit.cs" />
+    <Compile Include="Units\DerivedUnits\Acceleration.cs" />
+    <Compile Include="Units\DerivedUnits\Area.cs" />
+    <Compile Include="Units\DerivedUnits\AreaMeasures\SquareCentimeter.cs" />
+    <Compile Include="Units\DerivedUnits\AreaMeasures\SquareKilometer.cs" />
+    <Compile Include="Units\DerivedUnits\AreaMeasures\SquareMeter.cs" />
+    <Compile Include="Units\DerivedUnits\Density.cs" />
+    <Compile Include="Units\DerivedUnits\DensityMeasures\GramPerCubicCentimeter.cs" />
+    <Compile Include="Units\DerivedUnits\DensityMeasures\KilogramPerCubicKilometer.cs" />
+    <Compile Include="Units\DerivedUnits\DensityMeasures\KilogramPerCubicMeter.cs" />
+    <Compile Include="Units\DerivedUnits\DerivedMeasure.cs" />
+    <Compile Include="Units\DerivedUnits\Electricity\Coulomb.cs" />
+    <Compile Include="Units\DerivedUnits\Electricity\Farad.cs" />
+    <Compile Include="Units\DerivedUnits\Electricity\Ohm.cs" />
+    <Compile Include="Units\DerivedUnits\Electricity\Volt.cs" />
+    <Compile Include="Units\DerivedUnits\EnergyMeasures\Joule.cs" />
+    <Compile Include="Units\DerivedUnits\Force.cs" />
+    <Compile Include="Units\DerivedUnits\ForceMeasures\Newton.cs" />
+    <Compile Include="Units\DerivedUnits\Pressure.cs" />
+    <Compile Include="Units\DerivedUnits\PressureMeasures\Pascal.cs" />
+    <Compile Include="Units\DerivedUnits\Velocity.cs" />
+    <Compile Include="Units\DerivedUnits\VelocityMeasures\KilometersPerHour.cs" />
+    <Compile Include="Units\DerivedUnits\VelocityMeasures\MetersPerSecond.cs" />
+    <Compile Include="Units\DerivedUnits\Viscosity\Poiseuille.cs" />
+    <Compile Include="Units\DerivedUnits\Viscosity\Viscosity.cs" />
+    <Compile Include="Units\DerivedUnits\Volume.cs" />
+    <Compile Include="Units\DerivedUnits\VolumeMeasures\CubicCentimeter.cs" />
+    <Compile Include="Units\DerivedUnits\VolumeMeasures\CubicKilometer.cs" />
+    <Compile Include="Units\DerivedUnits\VolumeMeasures\CubicMeter.cs" />
+    <Compile Include="Units\DivisiveUnit.cs" />
+    <Compile Include="Units\Interface\IDerivedMeasure.cs" />
+    <Compile Include="Units\Interface\IDerivedUnit.cs" />
+    <Compile Include="Units\Interface\INumericValue.cs" />
+    <Compile Include="Units\Interface\IUnit.cs" />
+    <Compile Include="Units\LengthMeasures\BaseLengthMeasure.cs" />
+    <Compile Include="Units\LengthMeasures\Centimeter.cs" />
+    <Compile Include="Units\LengthMeasures\Kilometer.cs" />
+    <Compile Include="Units\LengthMeasures\Meter.cs" />
+    <Compile Include="Units\LengthMeasures\Picometer.cs" />
+    <Compile Include="Units\MassMeasures\AtomicMassUnit.cs" />
+    <Compile Include="Units\MassMeasures\Centigram.cs" />
+    <Compile Include="Units\MassMeasures\Gram.cs" />
+    <Compile Include="Units\MassMeasures\Kilogram.cs" />
+    <Compile Include="Units\MassMeasures\Milligram.cs" />
+    <Compile Include="Units\MultiplicativeUnit.cs" />
+    <Compile Include="Units\NumericValue.cs" />
+    <Compile Include="Units\TimeMeasures\Picosecond.cs" />
+    <Compile Include="Units\TimeMeasures\Nanosecond.cs" />
+    <Compile Include="Units\TimeMeasures\Microsecond.cs" />
+    <Compile Include="Units\TimeMeasures\Millisecond.cs" />
+    <Compile Include="Units\TimeMeasures\Hour.cs" />
+    <Compile Include="Units\TimeMeasures\Minute.cs" />
+    <Compile Include="Units\TimeMeasures\Second.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

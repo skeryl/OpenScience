@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{631D432E-6470-4340-AD69-18A2DF20D2E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenScience.Math", "OpenScience.Math\OpenScience.Math.csproj", "{9E7EB92C-14DC-4E5C-9CAE-7D2F846A5FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenScience.Physics", "OpenScience.Physics\OpenScience.Physics.csproj", "{9EFD87E8-4F9A-4023-BC28-D61C62D409DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{631D432E-6470-4340-AD69-18A2DF20D2E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631D432E-6470-4340-AD69-18A2DF20D2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631D432E-6470-4340-AD69-18A2DF20D2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631D432E-6470-4340-AD69-18A2DF20D2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E7EB92C-14DC-4E5C-9CAE-7D2F846A5FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7EB92C-14DC-4E5C-9CAE-7D2F846A5FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7EB92C-14DC-4E5C-9CAE-7D2F846A5FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7EB92C-14DC-4E5C-9CAE-7D2F846A5FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EFD87E8-4F9A-4023-BC28-D61C62D409DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFD87E8-4F9A-4023-BC28-D61C62D409DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFD87E8-4F9A-4023-BC28-D61C62D409DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFD87E8-4F9A-4023-BC28-D61C62D409DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
