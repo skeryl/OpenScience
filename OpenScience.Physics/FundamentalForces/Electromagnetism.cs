@@ -23,9 +23,9 @@ namespace OpenScience.Physics.FundamentalForces
 
         public static Newton ForceBetween(IPhysicalObject physicalObject, IPhysicalObject otherObject)
         {
-            Meter distanceBetween = physicalObject.Coordinates.DistanceFrom(otherObject.Coordinates);
+            Meter distanceBetween = physicalObject.GetCoordinates<Meter>().DistanceFrom<Meter>(otherObject.GetCoordinates<Meter>());
             var distanceSquared = new Meter(System.Math.Pow(distanceBetween.Value, 2));
-            var chargeProduct = physicalObject.Charge.Multiply(otherObject.Charge);
+            var chargeProduct = physicalObject.GetCharge().Multiply(otherObject.GetCharge());
             return new Newton((CoulombsConstant.Multiply(chargeProduct).Divide(distanceSquared)).Value);
         } 
     }

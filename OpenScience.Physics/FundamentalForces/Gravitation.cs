@@ -26,9 +26,9 @@ namespace OpenScience.Physics.FundamentalForces
 
         public static Newton GravityBetween(IPhysicalObject physicalObject, IPhysicalObject otherObject)
         {
-            Meter distanceBetween = physicalObject.Coordinates.DistanceFrom(otherObject.Coordinates);
+            Meter distanceBetween = physicalObject.GetCoordinates<Meter>().DistanceFrom<Meter>(otherObject.GetCoordinates<Meter>());
             var distanceSquared = new Meter(System.Math.Pow(distanceBetween.Value, 2));
-            var productOfMasses = (physicalObject.Mass*otherObject.Mass);
+            var productOfMasses = (physicalObject.GetMass<Kilogram>()*otherObject.GetMass<Kilogram>());
             return new Newton(GravitationalConstant.Multiply((productOfMasses).Divide(distanceSquared)).Value);
         }
     }

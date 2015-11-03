@@ -9,12 +9,20 @@ namespace OpenScience.Physics.Interface
 {
     public interface IPhysicalObject
     {
-        NumericValue<Mass> Mass { get; }
-        Volume<Meter> Volume { get; } 
-        Velocity<Meter, Second> Velocity { get; }
+        Velocity<NumericValue<Length>, NumericValue<Time>> Velocity { get; }
         Meter Length { get; }
-        PhysicalCoordinate<Meter> Coordinates { get; }
-        Coulomb Charge { get; }
+        
         Temperature Temperature { get; }
+
+        Volume<TLength> Volume<TLength>() where TLength : NumericValue<Length>, new();
+
+        TMass GetMass<TMass>() where TMass : NumericValue<Mass>, new();
+        IPhysicalObject SetMass(NumericValue<Mass> mass);
+
+        PhysicalCoordinate<TLength> GetCoordinates<TLength>() where TLength : NumericValue<Length>, new();
+        IPhysicalObject SetCoordinates<TLength>(PhysicalCoordinate<TLength> coordinates) where TLength : NumericValue<Length>, new();
+
+        Coulomb GetCharge();
+        IPhysicalObject SetCharge(Coulomb c);
     }
 }

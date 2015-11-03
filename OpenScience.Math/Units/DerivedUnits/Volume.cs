@@ -11,12 +11,12 @@ namespace OpenScience.Math.Units.DerivedUnits
         {
         }
 
-        public new TOther Convert<TOther, TOtherLength>()
+        public TOther Convert<TOther, TOtherLength>()
             where TOtherLength : NumericValue<Length>, new()
             where TOther : Volume<TOtherLength>, new()
         {
             var other = new TOther();
-            var conversionRatio = other.ConversionFactor / ConversionFactor;
+            double conversionRatio = other.ConversionFactor / ConversionFactor;
             other.Value = Value * conversionRatio;
             return other;
         }

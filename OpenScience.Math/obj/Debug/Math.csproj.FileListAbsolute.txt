@@ -1,0 +1,5 @@
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\bin\Debug\Math.dll
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\bin\Debug\Math.pdb
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\obj\Debug\Math.dll
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\obj\Debug\Math.pdb

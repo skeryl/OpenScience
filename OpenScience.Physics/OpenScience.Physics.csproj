@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FluidObject.cs" />
     <Compile Include="FundamentalForces\Electromagnetism.cs" />
     <Compile Include="FundamentalForces\Gravitation.cs" />
     <Compile Include="FundamentalForces\StrongNuclear.cs" />
@@ -46,9 +47,11 @@
     <Compile Include="Interface\IFluid.cs" />
     <Compile Include="Interface\IPhysicalObject.cs" />
     <Compile Include="Interface\IPhysicalSystem.cs" />
+    <Compile Include="Objects\Sphere.cs" />
     <Compile Include="PhysicalObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PhysicalSystem.cs" />
+    <Compile Include="SolidObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenScience.Math\OpenScience.Math.csproj">

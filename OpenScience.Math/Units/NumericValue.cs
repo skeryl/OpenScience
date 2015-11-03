@@ -119,22 +119,22 @@ namespace OpenScience.Math.Units
 
         public INumericValue Multiply(double value)
         {
-            return new NumericValue<TUnit>(Value * value) { Abbreviation = this.Abbreviation, ConversionFactor = this.ConversionFactor, Unit = this.Unit };
+            return new NumericValue<TUnit>(Value * value) { Abbreviation = Abbreviation, ConversionFactor = ConversionFactor, Unit = Unit };
         }
 
         public INumericValue Divide(double value)
         {
-            return new NumericValue<TUnit>(Value / value) { Abbreviation = this.Abbreviation, ConversionFactor = this.ConversionFactor, Unit = this.Unit };
+            return new NumericValue<TUnit>(Value / value) { Abbreviation = Abbreviation, ConversionFactor = ConversionFactor, Unit = Unit };
         }
 
         public INumericValue Add(double value)
         {
-            return new NumericValue<TUnit>(Value + value) { Abbreviation = this.Abbreviation, ConversionFactor = this.ConversionFactor, Unit = this.Unit };
+            return new NumericValue<TUnit>(Value + value) { Abbreviation = Abbreviation, ConversionFactor = ConversionFactor, Unit = Unit };
         }
 
         public INumericValue Subtract(double value)
         {
-            return new NumericValue<TUnit>(Value - value) { Abbreviation = this.Abbreviation, ConversionFactor = this.ConversionFactor, Unit = this.Unit };
+            return new NumericValue<TUnit>(Value - value) { Abbreviation = Abbreviation, ConversionFactor = ConversionFactor, Unit = Unit };
         }
 
         #endregion

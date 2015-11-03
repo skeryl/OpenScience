@@ -1,0 +1,15 @@
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\bin\Debug\OpenScience.Math.dll
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\bin\Debug\OpenScience.Math.pdb
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\obj\Debug\OpenScience.Math.csprojResolveAssemblyReference.cache
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\obj\Debug\OpenScience.Math.dll
+C:\Users\scarroll\Dropbox\Code\OpenScience\Math\obj\Debug\OpenScience.Math.pdb
+C:\Users\scarroll\Dropbox\Code\OpenScience\OpenScience.Math\bin\Debug\OpenScience.Math.dll
+C:\Users\scarroll\Dropbox\Code\OpenScience\OpenScience.Math\bin\Debug\OpenScience.Math.pdb
+C:\Users\scarroll\Dropbox\Code\OpenScience\OpenScience.Math\obj\Debug\OpenScience.Math.csprojResolveAssemblyReference.cache
+C:\Users\scarroll\Dropbox\Code\OpenScience\OpenScience.Math\obj\Debug\OpenScience.Math.dll
+C:\Users\scarroll\Dropbox\Code\OpenScience\OpenScience.Math\obj\Debug\OpenScience.Math.pdb
+C:\Users\scarroll\Documents\GitHub\OpenScience\OpenScience.Math\bin\Debug\OpenScience.Math.dll
+C:\Users\scarroll\Documents\GitHub\OpenScience\OpenScience.Math\bin\Debug\OpenScience.Math.pdb
+C:\Users\scarroll\Documents\GitHub\OpenScience\OpenScience.Math\obj\Debug\OpenScience.Math.csprojResolveAssemblyReference.cache
+C:\Users\scarroll\Documents\GitHub\OpenScience\OpenScience.Math\obj\Debug\OpenScience.Math.dll
+C:\Users\scarroll\Documents\GitHub\OpenScience\OpenScience.Math\obj\Debug\OpenScience.Math.pdb

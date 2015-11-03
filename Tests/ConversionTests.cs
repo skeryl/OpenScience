@@ -21,9 +21,9 @@ namespace Tests
         [Test]
         public void TestUnitConversion()
         {
-            var tenMeters = new Meter(20);
+            var twentyMeters = new Meter(20);
             var twoSeconds = new Second(2);
-            Velocity<Meter, Second> tenMetersPerSecond = (tenMeters/twoSeconds);
+            Velocity<Meter, Second> tenMetersPerSecond = twentyMeters / twoSeconds;
             Assert.AreEqual(10, tenMetersPerSecond.Value);
 
             Acceleration<Meter, Second> fiveMetersPerSecondPerSecond = tenMetersPerSecond / new Second(2);
