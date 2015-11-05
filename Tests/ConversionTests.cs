@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenScience.Math;
 using OpenScience.Math.Units.DerivedUnits;
 using OpenScience.Math.Units.DerivedUnits.DensityMeasures;
 using OpenScience.Math.Units.DerivedUnits.VolumeMeasures;
-using OpenScience.Math.Units.Interface;
 using OpenScience.Math.Units.LengthMeasures;
 using OpenScience.Math.Units.MassMeasures;
 using OpenScience.Math.Units.TimeMeasures;
@@ -21,9 +16,7 @@ namespace Tests
         [Test]
         public void TestUnitConversion()
         {
-            var twentyMeters = new Meter(20);
-            var twoSeconds = new Second(2);
-            Velocity<Meter, Second> tenMetersPerSecond = twentyMeters / twoSeconds;
+            Velocity<Meter, Second> tenMetersPerSecond = new Meter(20) / new Second(2);
             Assert.AreEqual(10, tenMetersPerSecond.Value);
 
             Acceleration<Meter, Second> fiveMetersPerSecondPerSecond = tenMetersPerSecond / new Second(2);

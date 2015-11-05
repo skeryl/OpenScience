@@ -5,7 +5,6 @@ using OpenScience.Math.Units.DerivedUnits;
 using OpenScience.Math.Units.DerivedUnits.Electricity;
 using OpenScience.Math.Units.LengthMeasures;
 using OpenScience.Math.Units.MassMeasures;
-using OpenScience.Math.Units.TimeMeasures;
 using OpenScience.Physics.Interface;
 
 namespace OpenScience.Physics
@@ -29,7 +28,7 @@ namespace OpenScience.Physics
             Charge = new Coulomb();
         }
 
-        public abstract Volume<TLength> Volume<TLength>() where TLength : NumericValue<Length>, new();
+        public abstract Volume<TLength> GetVolume<TLength>() where TLength : NumericValue<Length>, new();
 
         public TMass GetMass<TMass>() where TMass : NumericValue<Mass>, new()
         {

@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConversionTests.cs" />
+    <Compile Include="PhysicalObjectsTests.cs" />
     <Compile Include="PhysicsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

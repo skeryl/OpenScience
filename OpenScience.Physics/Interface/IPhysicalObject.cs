@@ -3,7 +3,6 @@ using OpenScience.Math.Units;
 using OpenScience.Math.Units.DerivedUnits;
 using OpenScience.Math.Units.DerivedUnits.Electricity;
 using OpenScience.Math.Units.LengthMeasures;
-using OpenScience.Math.Units.TimeMeasures;
 
 namespace OpenScience.Physics.Interface
 {
@@ -14,7 +13,7 @@ namespace OpenScience.Physics.Interface
         
         Temperature Temperature { get; }
 
-        Volume<TLength> Volume<TLength>() where TLength : NumericValue<Length>, new();
+        Volume<TLength> GetVolume<TLength>() where TLength : NumericValue<Length>, new();
 
         TMass GetMass<TMass>() where TMass : NumericValue<Mass>, new();
         IPhysicalObject SetMass(NumericValue<Mass> mass);

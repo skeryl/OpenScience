@@ -18,17 +18,17 @@ namespace OpenScience.Physics.Objects
             _radius = radius;
         }
 
-        public override Volume<TLength> Volume<TLength>()
+        public override Volume<TLength> GetVolume<TLength>()
         {
             return new Volume<TLength>((4 / 3) * System.Math.PI * System.Math.Pow(_radius.Value, 3));
         }
 
-        public TLength Radius<TLength>() where TLength : NumericValue<Length>, new()
+        public TLength GetRadius<TLength>() where TLength : NumericValue<Length>, new()
         {
             return (TLength) _radius.Convert<TLength>();
         } 
 
-        public void Radius(NumericValue<Length> radius)
+        public void SetRadius(NumericValue<Length> radius)
         {
             _radius = radius;
         }

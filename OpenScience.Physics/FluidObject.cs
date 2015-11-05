@@ -14,7 +14,7 @@ namespace OpenScience.Physics
     {
         public Poiseuille Viscosity { get; set; }
 
-        public override Volume<TLength> Volume<TLength>()
+        public override Volume<TLength> GetVolume<TLength>()
         {
             throw new NotImplementedException();
         }
